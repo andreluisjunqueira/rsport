@@ -1,0 +1,246 @@
+<style>
+.datepicker{z-index:1151 !important;}
+</style>
+<div class="col-xs-12 col-md-12">
+                            <div class="well with-header with-footer">
+                                <div class="header bordered-pink">
+                                    Alunos
+                                </div>
+                                <div class="table-toolbar">
+                                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Novo aluno</button>
+                                </div>
+                                <div class="table-toolbar">
+                                    <label><span class="input-icon">
+                                                            <input type="text" class="form-control input-sm">
+                                                            <i class="glyphicon glyphicon-search blue"></i>
+                                                        </span></label>
+                                </div>
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <i class="fa fa-briefcase"></i> Company
+                                            </th>
+                                            <th class="hidden-xs">
+                                                <i class="fa fa-user"></i> Contact
+                                            </th>
+                                            <th>
+                                                <i class="fa fa-shopping-cart"></i> Total
+                                            </th>
+                                            <th>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#">RedBull</a>
+                                            </td>
+                                            <td class="hidden-xs">
+                                                Mike Nilson
+                                            </td>
+                                            <td>
+                                                2560.60$
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-default btn-xs purple"><i class="fa fa-edit"></i> Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">Google</a>
+                                            </td>
+                                            <td class="hidden-xs">
+                                                Adam Larson
+                                            </td>
+                                            <td>
+                                                560.60$
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-default btn-xs black"><i class="fa fa-trash-o"></i> Delete</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">Apple</a>
+                                            </td>
+                                            <td class="hidden-xs">
+                                                Daniel Kim
+                                            </td>
+                                            <td>
+                                                3460.60$
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-default btn-xs purple"><i class="fa fa-edit"></i> Edit</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#">Microsoft</a>
+                                            </td>
+                                            <td class="hidden-xs">
+                                                Nick
+                                            </td>
+                                            <td>
+                                                2560.60$
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-default btn-xs blue"><i class="fa fa-share"></i> Share</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="footer">
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal modal-darkorange" id="modal1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h4 class="modal-title">Novo aluno</h4>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <form>
+                                            <div class="widget flat radius-bordered">
+                                            <div class="widget-header bg-blue">
+                                                <span class="widget-caption">Novo aluno</span>
+                                            </div>
+                                            <div class="widget-body">
+                                                <div id="registration-form">
+                                                    <form role="form">
+                                                        <div class="form-title">
+                                                            Informacoes do aluno
+                                                        </div>
+                                                        <div class="databox-top bg-white padding-10" >
+                                                            <div class="col-lg-4 col-sm-4 col-xs-4" style="margin-bottom: 10px;">
+                                                                <img src="<?php echo $this->baseUrl('/assets/img/logors.png')?>" style="width:100px; height:100px;" class="image-circular bordered-3 bordered-palegreen">
+                                                                <p>Foto do aluno</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <span class="input-icon icon-right">
+                                                                <input type="text" class="form-control" id="userameInput" placeholder="Nome" name="nome">
+                                                                <i class="glyphicon glyphicon-user circular"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="input-group">
+                                                                    <input class="form-control date-picker" id="id-date-picker-1" placeholder="Data" type="text" data-date-format="dd/mm/yyyy" name="data">
+                                                                    <span class="input-group-addon">
+                                                                        <i class="fa fa-calendar"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="input-group">
+                                                                    <input class="form-control date-picker" id="id-date-picker-1" placeholder="Dia de inicio" type="text" data-date-format="dd/mm/yyyy" name="diadeinicio">
+                                                                    <span class="input-group-addon">
+                                                                        <i class="fa fa-calendar"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row" >
+                                                            <div class="col-sm-6" style="margin: 15px 0px">
+                                                                <div class="input-group">
+                                                                    <div class="input-group-btn">
+                                                                        <select class="form-control" id="select2" placeholder="Data da ultima troca de treino">
+                                                                              <option value="" disabled selected>Data da ultima troca de treino</option>
+                                                                              <option value="AK">1 semana</option>
+                                                                              <option value="HI">2 semanas</option>
+                                                                              <option value="CA">3 semanas</option>
+                                                                              <option value="NV">4 semanas</option>
+                                                                          </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <span class="input-icon icon-right">
+                                                                <input type="text" class="form-control" id="userameInput" placeholder="Professor" name="professor">
+                                                                <i class="glyphicon glyphicon-user circular"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="row" >
+                                                            <div class="col-sm-6" style="margin: 15px 0px">
+                                                                <div class="input-group">
+                                                                    <div class="input-group-btn">
+                                                                        <select class="form-control" id="select2" placeholder="Data da ultima troca de treino">
+                                                                              <option value="" disabled selected>Objeivo</option>
+                                                                              <option value="AK">Hipertrofia</option>
+                                                                              <option value="HI">Definicao</option>
+                                                                              <option value="CA">Emagrecimento</option>
+                                                                              <option value="NV">Especificos</option>
+                                                                              <option value="NV">Adaptacao</option>
+                                                                          </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="form-group">
+
+                                                            <span class="input-icon icon-right">
+                                                                <input type="text" class="form-control" id="emailInput" placeholder="E-mail" name="email">
+                                                                <i class="fa fa-envelope-o circular"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <span class="input-icon icon-right">
+                                                                <input type="password" class="form-control" id="passwordInput" placeholder="Senha" name="senha">
+                                                                <i class="fa fa-lock circular"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <span class="input-icon icon-right">
+                                                                <input type="password" class="form-control" id="confirmPasswordInput" placeholder="Confirme a senha" name="confSenha">
+                                                                <i class="fa fa-lock circular"></i>
+                                                            </span>
+                                                        </div>
+                                                        
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-primary">Cadastrar</button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div>
+
+
+
+
+    <script src="<?php $this->headScript()->appendFile($this->baseUrl('assets/js/jquery-2.0.3.min.js'))?>"></script>
+
+    <!--Bootstrap Date Picker-->
+    <script src="<?php $this->headScript()->appendFile($this->baseUrl('assets/js/select2/select2.js'))?>"></script>
+    <script src="<?php $this->headScript()->appendFile($this->baseUrl('assets/js/datetime/bootstrap-datepicker.js'))?>"></script>
+    <script src="<?php $this->headScript()->appendFile($this->baseUrl('assets/js/tagsinput/bootstrap-tagsinput.js'))?>"></script>
+    <script src="<?php $this->headScript()->appendFile($this->baseUrl('assets/js/datetime/bootstrap-timepicker.js'))?>"></script>
+    <script src="<?php $this->headScript()->appendFile($this->baseUrl('assets/js/datetime/moment.js'))?>"></script>
+    <script src="<?php $this->headScript()->appendFile($this->baseUrl('assets/js/datetime/daterangepicker.js'))?>"></script>
+    <script src="<?php $this->headScript()->appendFile($this->baseUrl('assets/js/textarea/jquery.autosize.js'))?>"></script>
+    <script src="<?php $this->headScript()->appendFile($this->baseUrl('assets/js/fuelux/spinbox/fuelux.spinbox.min.js'))?>"></script>
+    <script src="<?php $this->headScript()->appendFile($this->baseUrl('assets/js/knob/jquery.knob.js'))?>"></script>
+    <script src="<?php $this->headScript()->appendFile($this->baseUrl('assets/js/slider/jquery.nouislider.js'))?>"></script>
+    <script src="<?php $this->headScript()->appendFile($this->baseUrl('assets/js/jquery-ui-1.10.4.custom.js'))?>"></script>
+    <script src="<?php $this->headScript()->appendFile($this->baseUrl('assets/js/slider/jQRangeSlider/jQAllRangeSliders-withRuler-min.js'))?>"></script>
+    <script src="<?php $this->headScript()->appendFile($this->baseUrl('/js/admin/aluno/index.js'))?>"></script>
+
+    <?php echo $this->headScript()?> 

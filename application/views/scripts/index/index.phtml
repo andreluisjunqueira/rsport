@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--Head-->
+<head>
+    <meta charset="utf-8" />
+    <title>Entrar no sistema</title>
+
+    <meta name="description" content="login page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--Basic Styles-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!--Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="assets/css/beyond.css" rel="stylesheet" />
+
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link id="skin-link" href="assets/css/skins/gray.min.css" rel="stylesheet" type="text/css" />
+
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <script src="assets/js/skins.min.js"></script>
+</head>
+<style>
+    .img-logo{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        left: 34%;
+        margin-top: 10px;
+    }
+    .principal{
+        position: fixed;
+        background-image: url('assets/img/fundoLogin.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        
+    }
+    .loginbox{
+        background-color: #c6c6c6 !important;
+        opacity: .85;
+    }
+</style>
+<!--Head Ends-->
+<!--Body-->
+<body class="login">
+    <div class="principal"> 
+    <div class="login-container animated fadeInDown">
+        <div class="loginbox bg-white">
+            <div id="div-erro"class="alert alert-danger fade in radius-bordered alert-shadowed">
+                <i class="fa-fw fa fa-times"></i>
+                <strong>Erro ! </strong><span id="msgErro"></span> 
+            </div>
+            <div class="loginbox-title">ENTRAR</div>
+            <div>
+                <img class="img-logo" src="assets/img/logors.png">
+            </div>
+            <form id="loginForm">
+                <div class="loginbox-or">
+                    <div class="or-line"></div>
+                </div>
+                <div id="txtusuario" class="loginbox-textbox ">
+                    <input type="text" name="usuario" class="form-control" placeholder="Usuario" />
+                </div>
+                <div id="txtsenha" class="loginbox-textbox">
+                    <input type="text" name="senha" class="form-control" placeholder="Senha" />
+                </div>
+                <div class="loginbox-forgot">
+                    <a href="">Esqueceu a senha ?</a>
+                </div>
+                <div class="loginbox-submit">
+                    <input type="submit" class="btn btn-primary btn-block" value="Entrar" onclick="logar();">
+                </div>
+            </form>
+<!--            <div class="loginbox-signup">
+                <a href="register.html">Sign Up With Email</a>
+            </div>-->
+        </div>
+<!--        <div class="logobox">
+        </div>-->
+    </div>
+    </div>>
+
+    <!--Basic Scripts-->
+    <script src="assets/js/jquery-2.0.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!--Beyond Scripts-->
+    <script src="assets/js/beyond.js"></script>
+
+</body>
+<!--Body Ends-->
+</html>
